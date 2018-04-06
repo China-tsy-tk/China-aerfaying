@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>test</title>
+    </head>
+    <body>
+        <img id="img1"src="https://www.aerfaying.com/Content/images/banner-07.png" width="1000"/>
+        <input id="ipt1" value="" id="" type="text"/>
+        <button onclick="onbt1()">完成</button>
+        <script>
+            var input=document.getElementById("ipt1")
+            function onbt1(){
+                alert(input.value)
+            }
+        var img=document.getElementById("img1");
+        var i=0;
+        window.setInterval(function(){
+            img.width=1000+100*(Math.sin(i/10));
+            i=i+1;
+        },100);
+        </script>
+    </body>
+</html>

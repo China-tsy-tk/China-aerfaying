@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>银行计算</title>
+    </head>
+    <body>
+        <p>本金</p>
+        <input id="mon" type="text"/>
+        <p>利率</p>
+        <input id="a" type="text"/>
+        <p>存期</p>
+        <input id="ty" type="text"/>
+        <button onclick="cclt()">计算</button>
+        <script>
+            function cclt(){
+                var mon=document.getElementById("mon"),a=document.getElementById("a"),ty=document.getElementById("ty");
+                mon=Number(mon.value);
+                a=Number(a.value);
+                ty=Number(ty.value);
+                for(var i=1;i<=ty;i=i+1){
+                mon=mon*(1+a);
+                }
+                document.write(mon);
+            }
+        </script>
+    </body>
+</html>
