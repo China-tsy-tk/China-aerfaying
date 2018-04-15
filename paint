@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>paint</title>
+</head>
+
+<body>
+    <canvas id="canvas1" width="480" height="360"></canvas>
+    <script>
+        var canvas1 = document.getElementById("canvas1");
+        var c2d = canvas1.getContext("2d");
+        /*function line(x1, y1, x2, y2, color, width) {
+            c2d.beginPath();
+            c2d.moveTo(x1, y1);
+            c2d.lineTo(x2, y2);
+            c2d.strokeStyle = color;
+            c2d.lineWidth = width;
+            c2d.stroke();
+        }
+        line(100, 100, 200, 100, "#0000ff", 5);
+        c2d.strokeRect(150, 50, 100, 100);
+        line(100, 200, 200, 200, "#ff0000", 5);
+        c2d.fillStyle = "#00ff00";
+        c2d.fillRect(50, 50, 100, 100);
+        c2d.beginPath();
+        c2d.moveTo(240, 180);
+        c2d.lineTo(340, 180);
+        c2d.arc(240, 180, 100, 0, Math.PI / 2);
+        c2d.closePath();
+        c2d.fillStyle = "#00ffff";
+        c2d.fill();*/
+        c2d.beginPath();
+        c2d.arc(340,80,10,Math.PI*-0.5,0);
+        //c2d.moveTo(350,80);
+        c2d.lineTo(350,280);
+        c2d.arc(340,280,10,0,Math.PI/2);
+        //c2d.moveTo(340,290);
+        c2d.lineTo(140,290);
+        c2d.arc(140,280,10,Math.PI/2,Math.PI);
+        //c2d.moveTo(130,280);
+        c2d.lineTo(130,80);
+        c2d.arc(140,80,10,Math.PI,Math.PI*1.5);
+        c2d.closePath();
+        c2d.fill();
+        //c2d.stroke();
+    </script>
+</body>
+
+</html>
